@@ -44,7 +44,7 @@ describe "Static pages" do
 
         it "should have the content 'Contact'" do
             visit '/static_pages/contact'
-            xpect(page).to have_content('Contact')
+            expect(page).to have_content('Contact')
         end
 
         it "should have the title 'Contact'" do
