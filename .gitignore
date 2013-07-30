@@ -17,3 +17,5 @@
 
 # Ignore backup files
 /**/*~
+
+/config/database.yml
