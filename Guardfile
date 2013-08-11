@@ -1,8 +1,7 @@
 require 'active_support/inflector'
-
+# insert this 'test_unit: false' if we have a test directory
 guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' },
-               :rspec_env    => { 'RAILS_ENV' => 'test' },
-               test_unit: false do # 'test_unit: false' becouse we have test directory
+               :rspec_env    => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
